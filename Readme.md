@@ -83,7 +83,6 @@ Total params: 220,417
 Trainable params: 219,905
 Non-trainable params: 512
 _________________________________________________________________
-
 ```
 
 ### 1. Metric
