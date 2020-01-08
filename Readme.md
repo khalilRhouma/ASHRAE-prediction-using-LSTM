@@ -59,28 +59,26 @@ BTW_train['air_temperature'].fillna(BTW_train['air_temperature'].mean(), inplace
 To solve this problem, We crate a DeepLearning model based on LSTM units. This image below will illustrate our model architecture:
 
 ``` 
-Model: "sequential_2"
+Model: "sequential_5"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-lstm_3 (LSTM)                (None, None, 128)         71168     
+lstm_9 (LSTM)                (None, None, 128)         71168     
 _________________________________________________________________
-batch_normalization_3 (Batch (None, None, 128)         512       
+batch_normalization_9 (Batch (None, None, 128)         512       
 _________________________________________________________________
-dropout_3 (Dropout)          (None, None, 128)         0         
+dropout_9 (Dropout)          (None, None, 128)         0         
 _________________________________________________________________
-lstm_4 (LSTM)                (None, 128)               131584    
+lstm_10 (LSTM)               (None, 128)               131584    
 _________________________________________________________________
-batch_normalization_4 (Batch (None, 128)               512       
+batch_normalization_10 (Batc (None, 128)               512       
 _________________________________________________________________
-dropout_4 (Dropout)          (None, 128)               0         
+dropout_10 (Dropout)         (None, 128)               0         
 _________________________________________________________________
-dense_3 (Dense)              (None, 128)               16512     
-_________________________________________________________________
-dense_4 (Dense)              (None, 1)                 129       
+dense_7 (Dense)              (None, 1)                 129       
 =================================================================
-Total params: 220,417
-Trainable params: 219,905
+Total params: 203,905
+Trainable params: 203,393
 Non-trainable params: 512
 _________________________________________________________________
 ```
